@@ -82,14 +82,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media (max-width: 768px) {
-  .bg-header {
-    background: url(../images/home-header-sm.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
 
 .bg-pink {
   background: #FBF2F2;
@@ -274,7 +266,22 @@ ul {
   padding-right: 0;
 }
 
-* {
+.footer-ic-social {
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 768px) {
+  .footer-ic-social {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.border-top-white {
+  border-top: 1px solid #fff;
+}
+
+.test {
   outline: 1px solid rgb(96, 219, 116);
 }
 
@@ -651,19 +658,4 @@ ul {
     height: 24px;
     font-size: 24px !important;
   }
-}
-
-.footer-ic-social {
-  width: 40px;
-  height: 40px;
-}
-@media (max-width: 768px) {
-  .footer-ic-social {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-.border-top-white {
-  border-top: 1px solid #fff;
 }/*# sourceMappingURL=all.css.map */

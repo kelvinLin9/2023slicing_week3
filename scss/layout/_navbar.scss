@@ -1,7 +1,7 @@
 // navbar
 .navbar {
   padding: 16px 0;
-  @media (max-width: 768px) {
+  @include md {
     padding-bottom: 0;
   }
 }
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   
-  @media (max-width: 768px) {
+  @include md {
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
@@ -18,7 +18,7 @@
 }
 .navbar-logo {
   width: 80px;
-  @media (max-width: 768px) {
+  @include md {
     margin: 0 0 16px 16px;
   }
 }
@@ -26,13 +26,13 @@
   display: flex;
   // 這個常會忘記
   align-items: center;
-  @media (max-width: 768px) {
+  @include md {
     flex-wrap: wrap;
   }
 }
 .navbar-item {
   height: 100%;
-  @media (max-width: 768px) {
+  @include md {
     width: 50%;
     margin-right: 0px;
     border: 1px solid #ffffff;
@@ -45,7 +45,7 @@
   color: #ffffff;
   padding: 8px 32px;
   
-  @media (max-width: 768px) {
+  @include md {
     font-size: 16px;
     text-align: center;
     padding: 12px 0;
