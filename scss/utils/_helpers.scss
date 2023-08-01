@@ -3,7 +3,7 @@ $black:    #000 !default;
 $gary:     #707070 !default;
 $primary:       #aa0601  !default;
 $secondary:     #650300 !default;
-.test {
+* {
   outline: 1px solid rgb(96, 219, 116);
 }
 .h-100 {
@@ -129,8 +129,20 @@ $secondary:     #650300 !default;
 .text-end {
   text-align: end;
 }
+.justify-content-center{
+  justify-content: center;
+}
+.justify-content-end{
+  justify-content: end; 
+}
+.justify-content-between{
+  justify-content: space-between;
+}
 .align-items-center {
   align-items: center;
+}
+.align-items-start {
+  align-items: start;
 }
 .vertical-align-middle {
   vertical-align: middle;
@@ -147,4 +159,99 @@ $secondary:     #650300 !default;
 }
 .text-secondary {
   color: $secondary
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.d-block {
+  display: block;
+}
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+.order-1 {
+  order: 1
+}
+.order-2 {
+  order: 2
+}
+.order-3 {
+  order: 3
+}
+@include md {
+  .d-md-block {
+    display: block;
+  }
+  .d-md-none {
+    display: none;
+  }
+  .order-md-1 {
+    order: 1;
+  }
+}
+@include sm {
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-none {
+    display: none;
+  }
+  .order-sm-1 {
+    order: 1;
+  }
+}
+
+
+.fs-14 {
+  font-size: 14px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-36 {
+  font-size: 36px;
+}
+.fs-42 {
+  font-size: 42px;
+}
+.fs-48 {
+  font-size: 48px;
+}
+.fs-64 {
+  font-size: 64px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+@include md {
+  .fs-md-16 {
+    font-size: 16px;
+  }
+  .fs-md-24 {
+    font-size: 24px;
+  }
+}
+@include sm {
+  .fs-sm-16 {
+    font-size: 16px;
+  }
+  .fs-sm-24 {
+    font-size: 24px;
+  }
 }
