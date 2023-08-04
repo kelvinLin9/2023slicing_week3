@@ -1,18 +1,3 @@
-@mixin lg {
-  @media(max-width:992px) {
-      @content;
-  }
-}
-@mixin md {
-  @media(max-width:768px) {
-      @content;
-  }
-}
-@mixin sm {
-  @media(max-width:375px) {
-      @content;
-  }
-}
 body {
   font-family: 'Noto Sans TC','Roboto', sans-serif;
   
